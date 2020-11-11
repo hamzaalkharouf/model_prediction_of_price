@@ -25,8 +25,8 @@ jobs:
           
       - name: build docker 
         run : |
-          docker build ./ -t ${{ secrets.DOCKER_USERNAME }}/hamza20ps/model_prediction_of_price6
+          docker build ./ -t ${{ secrets.DOCKER_USERNAME }}/model_prediction_of_price6
   
       - name: docker push 
         run : |
-          docker push ${{ secrets.DOCKER_USERNAME }}/hamza20ps/model_prediction_of_price6
+          docker push ${{ secrets.DOCKER_USERNAME }}/model_prediction_of_price6
